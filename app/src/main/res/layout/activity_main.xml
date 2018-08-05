@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pmp.tianxundai.com.xtablayoutcut.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/xTablayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:xTabBackgroundColor="#FFFFFF"
+            app:xTabDividerWidthWidthText="true"
+            app:xTabMode="scrollable"
+            app:xTabIndicatorColor="#FFFFFF"
+            app:xTabSelectedTextColor="#f00"
+            app:xTabTextColor="#000"
+            app:xTabTextSize="15sp"
+            app:xTabDisplayNum="4"
+            app:xTabSelectedTextSize="30sp"
+            />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"
+            />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
